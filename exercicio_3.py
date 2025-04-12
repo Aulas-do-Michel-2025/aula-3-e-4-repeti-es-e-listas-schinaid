@@ -34,11 +34,9 @@ primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os nú
 segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
 
 # Fazer a partir daqui
-# Encontra os maiores valores em cada lista
 maior_primeira = max(palavra := primeira_lista)
 maior_segunda = max(segunda_lista)
 
-# Compara os maiores e imprime a resposta
 print("\nResposta:")
 if maior_primeira > maior_segunda:
     print("Primeira")
