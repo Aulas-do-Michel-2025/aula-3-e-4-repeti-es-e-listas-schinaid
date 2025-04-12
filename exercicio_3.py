@@ -33,15 +33,9 @@ Ambas
 primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os números por vírgula): ").split(","))]
 segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
 
-# Calcula os maiores valores de cada lista
+# Calcula os maiores valores
 maior_primeira = max(primeira_lista)
 maior_segunda = max(segunda_lista)
 
-# Imprime a resposta correta
-print("\nResposta:")
-if maior_primeira > maior_segunda:
-    print("Primeira")
-elif maior_segunda > maior_primeira:
-    print("Segunda")
-else:
-    print("Ambas")
+# Imprime a resposta conforme solicitado
+print("Primeira" if maior_primeira > maior_segunda else "Segunda" if maior_segunda > maior_primeira else "Ambas")
